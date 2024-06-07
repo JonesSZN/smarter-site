@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./sections/header";
 import Hero from "./sections/hero";
 import Partner from "./sections/partner";

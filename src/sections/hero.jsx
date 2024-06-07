@@ -23,11 +23,11 @@ function HeroTop() {
         </button>
       </div>
 
-      <h1 className="text-center font-bold text-[#cce6ff] lg:text-[70px] text-[41px] max-w-[880px]">
+      <h1 className="text-center font-bold my-4 text-[#cce6ff] lg:text-7xl text-4xl text-[41px] lg:max-w-[880px] max-w-[350px]">
         Make boring text and data beautiful with{" "}
         <span className="text-[#5c48b8]">Smarter</span>
       </h1>
-      <p className="lg:text-[16px] text-[14px] mb-4 text-center lg:max-w-[650px] max-w-[600px] text-[#cce6ff]">
+      <p className="lg:text-[16px] text-sm mb-4 text-center lg:max-w-[650px] max-w-[380px] text-[#cce6ffBF]">
         The program uses advanced data visualization techniques to transform
         textual information into graphical representations that are easy to
         understand and interpret.
@@ -39,7 +39,7 @@ function HeroTop() {
 
 function Buttons() {
   return (
-    <div className="lg:flex lg:flex-row flex flex-col lg:w-auto w-full gap-4 mb-12">
+    <div className="lg:flex lg:flex-row flex flex-col lg:w-auto w-full gap-3 mb-12">
       <button className="bg-[#151515] border border-[#cce6ff] text-[#cce6ff] font-semibold lg:flex  lg:py-[12px] py-[8px] px-10 rounded-full  text-[16px]">
         Read More
       </button>

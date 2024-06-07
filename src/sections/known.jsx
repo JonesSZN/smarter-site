@@ -59,7 +59,7 @@ function MidColRight() {
         easier to identify areas where you might need to adjust your spending
         habits.
       </p>
-      <button className="text-[16px] max-w-[127px] flex gap-1 items-center justify-center mt-10 py-[5px] px-[14px] rounded-full bg-[#5c48b8] text-white font-semibold">
+      <button className="text-[16px] max-w-[127px] whitespace-nowrap flex gap-1 items-center justify-center mt-10 py-[5px] px-[14px] rounded-full bg-[#5c48b8] text-white font-semibold">
         Read More <ChevronRight size={15} />
       </button>
     </div>
@@ -89,7 +89,7 @@ function BottomColLeft() {
       <p className="text-[16px] text-[#cce6ffBF]">
         This would help you stay on track and avoid overspending.
       </p>
-      <button className="text-[16px] max-w-[127px] flex gap-1 items-center justify-center mt-10 py-[5px] px-[14px] rounded-full bg-[#5c48b8] text-white font-semibold">
+      <button className="text-[16px] max-w-[127px] whitespace-nowrap flex gap-1 items-center justify-center mt-10 py-[5px] px-[14px] rounded-full bg-[#5c48b8] text-white font-semibold">
         Read More <ChevronRight size={15} />
       </button>
     </div>
