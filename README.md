@@ -1,8 +1,7 @@
-<h1 align="center">smarter-site</h1>
+
 
 # Project Title
-
-A brief description of what this project does and who it's for.
+<h1 align="center">smarter-site</h1>
 
 ## Description
 
