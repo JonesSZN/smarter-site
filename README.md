@@ -26,6 +26,5 @@ npm install
 
 
 
-
 ![image](https://github.com/JonesSZN/smarter-site/assets/110791038/e8187580-fccb-4fac-aee0-f629ba0ef6a0)
 
