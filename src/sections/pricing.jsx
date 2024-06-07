@@ -90,45 +90,27 @@ function Cards() {
     },
   ];
   return (
-    <div className="flex lg:flex-row  flex-col gap-6 ">
+    <div className="flex lg:flex-row lg:items-center  flex-col gap-6 ">
       {CARD_OBJ.map((item, index) => (
-        <div className="p-6 w-full hover:bg-[#0D0D0D] transition-all duration-300   rounded-xl bg-[#202020] border border-white/20">
+        <div className="p-6 w-full h-fit hover:bg-[#0D0D0D] transition-all duration-300   rounded-xl bg-[#202020] border border-white/20">
           <button
             className={
               index === 1
                 ? "bg-[#ff9022] mb-4 py-2 px-6 text-white rond font-semibold rounded-full"
                 : index === CARD_OBJ.length - 1
-                ? "bg-green-500 mb-12 py-2 px-6 text-white rounded-full"
-                : "bg-[#5240a6] mb-12 py-2 px-6 text-white rond font-semibold rounded-full"
+                ? "bg-green-500 mb-4 py-2 px-6 text-white rounded-full"
+                : "bg-[#5240a6] mb-4 py-2 px-6 text-white rond font-semibold rounded-full"
             }
           >
             {item.tag}
           </button>
+
           <p className="text-[#ff9022] mb-8 font-bold">{item.subheading}</p>
           <p className="text-[48px] font-bold text-[#cce6ff]">{item.price}</p>
           <p className="text-[16px] mb-8 text-[#cce6ffBF]">{item.duration}</p>
           <hr className=" border-b border-white/10  mb-8" />
 
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2 text-white">
-              <Check color="white" size={20} />
-              <p className="text-[#cce6ff]">{item.benefits[0]}</p>
-            </div>
-
-            <div className="flex items-center gap-2 text-white">
-              <Check color="white" size={20} />
-              <p className="text-[#cce6ff]">{item.benefits[1]}</p>
-            </div>
-
-            <div className="flex items-center gap-2 text-white">
-              <Check color="white" size={20} />
-              <p className="text-[#cce6ff]">{item.benefits[2]}</p>
-            </div>
-            <div className="flex items-center gap-2 text-white">
-              <Check color="white" size={20} />
-              <p className="text-[#cce6ff]">{item.benefits[3]}</p>
-            </div>
-          </div>
+          <Test props={item.benefits} />
 
           <button
             className={
@@ -144,5 +126,18 @@ function Cards() {
     </div>
   );
 }
+
+const Test = ({ props }) => {
+  return (
+    <div className="flex flex-col gap-3">
+      {props.map((benefit, index) => (
+        <div key={index} className="flex items-center gap-2 text-white">
+          <Check color="white" size={20} />
+          <p className="text-[#cce6ff]">{benefit}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default Pricing;
