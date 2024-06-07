@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/smarter-site/static/css/main.c8df812e.css",
-    "main.js": "/smarter-site/static/js/main.cdf0902f.js",
+    "main.css": "/smarter-site/static/css/main.bcac70b1.css",
+    "main.js": "/smarter-site/static/js/main.6ff79792.js",
     "index.html": "/smarter-site/index.html",
-    "main.c8df812e.css.map": "/smarter-site/static/css/main.c8df812e.css.map",
-    "main.cdf0902f.js.map": "/smarter-site/static/js/main.cdf0902f.js.map"
+    "main.bcac70b1.css.map": "/smarter-site/static/css/main.bcac70b1.css.map",
+    "main.6ff79792.js.map": "/smarter-site/static/js/main.6ff79792.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8df812e.css",
-    "static/js/main.cdf0902f.js"
+    "static/css/main.bcac70b1.css",
+    "static/js/main.6ff79792.js"
   ]
 }
