@@ -25,6 +25,14 @@ cd your-project-name
 npm install
 
 
+![image](https://github.com/JonesSZN/smarter-site/assets/110791038/cbb07ad9-4b8d-4091-9031-63ea6663a88e)
 
-![image](https://github.com/JonesSZN/smarter-site/assets/110791038/e8187580-fccb-4fac-aee0-f629ba0ef6a0)
+
+
+
+
+
+
+
+
 
