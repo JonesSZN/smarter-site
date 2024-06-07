@@ -15,6 +15,11 @@ This project is a single homepage site built with React and styled using Tailwin
 - React Framework
 - Tailwind CSS Integration
 
+
+
+![image](https://github.com/JonesSZN/smarter-site/assets/110791038/cbb07ad9-4b8d-4091-9031-63ea6663a88e)
+
+
 ## Installation
 
 To get started with this project, clone the repo and install the dependencies.
@@ -25,7 +30,7 @@ cd your-project-name
 npm install
 
 
-![image](https://github.com/JonesSZN/smarter-site/assets/110791038/cbb07ad9-4b8d-4091-9031-63ea6663a88e)
+
 
 
 
