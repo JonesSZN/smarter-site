@@ -1,7 +1,7 @@
 
 
-# Project Title
-<h1 align="center">smarter-site</h1>
+# Project Title  <h1 align="center">smarter-site</h1>
+
 
 ## Description
 
