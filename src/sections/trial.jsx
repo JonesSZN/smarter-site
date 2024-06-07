@@ -30,7 +30,7 @@ function Button() {
   return (
     <div className=" lg:h-[54px] lg:bg-[#202020] bg-transparent  text-white hover:border-blue-500 transition-all duration-500 rounded-full  lg:pl-4 lg:border border-white/10 flex lg:flex-row flex-col  gap-2 lg:gap-8 justify-between lg:items-center lg:w-[460px] w-full ">
       <input
-        className=" lg:bg-transparent bg-white rounded-full   py-4 lg:px-0 px-4 w-full outline-none "
+        className=" lg:bg-transparent bg-[#202020] rounded-full   py-4 lg:px-0 px-4 w-full outline-none "
         placeholder="Email Address "
       ></input>
       <button className="bg-[#cce6ff] lg:w-auto w-full  font-semibold flex justify-center items-center px-6 py-4 rounded-full h-full  text-black">
