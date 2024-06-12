@@ -1,20 +1,21 @@
 import { Heart, FileUp, SmileIcon } from "lucide-react";
+import { Container } from "../components";
 
 function Partner() {
   return (
-    <section className="w-full flex py-28 justify-center bg-[#0D0D0D]">
-      <div className="lg:w-[65%] w-[90%] max-w-[1450px] flex flex-col gap-16 ">
+    <section className="flex w-full justify-center bg-[#0D0D0D] py-28">
+      <Container className="flex-col gap-16">
         <Toppartners />
         <Cards />
-      </div>
+      </Container>
     </section>
   );
 }
 
 function Toppartners() {
   return (
-    <div className="lg:flex lg:flex-row lg:justify-between flex flex-col gap-8 lg:gap-4">
-      <p className=" font-semibold text-[28px] text-[#cce6ff]">Partners</p>
+    <div className="flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between lg:gap-4">
+      <p className="text-[28px] font-semibold text-[#cce6ff]">Partners</p>
       <Partnernames />
     </div>
   );
@@ -30,9 +31,9 @@ function Partnernames() {
     "images/partnerlogo-5.svg",
   ];
   return (
-    <div className="lg:flex lg:flex-row grid grid-cols-2 gap-14">
+    <div className="grid grid-cols-2 gap-14 lg:flex lg:flex-row">
       {names.map((name) => (
-        <img className="lg:w-[90px] w-[169px]" src={name} alt="" />
+        <img className="w-[169px] lg:w-[90px]" src={name} alt="" />
       ))}
     </div>
   );
@@ -61,16 +62,16 @@ function Cards() {
   ];
 
   return (
-    <div className="lg:flex lg:flex-row flex flex-col  gap-8">
+    <div className="flex flex-col gap-8 lg:flex lg:flex-row">
       {cardObj.map((card) => (
-        <div className="py-[30px] hover:bg-[#0D0D0D] transition-all duration-200 hover:-translate-y-2 px-[20px] flex flex-col gap-4 border border-gray-600 rounded-xl bg-[#202020]">
-          <div className="rounded-full bg-black w-16 h-16 flex items-center justify-center">
+        <div className="flex flex-col gap-4 rounded-xl border border-gray-600 bg-[#202020] px-[20px] py-[30px] transition-all duration-200 hover:-translate-y-2 hover:bg-[#0D0D0D]">
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-black">
             {card.img}
           </div>
-          <h2 className="text-[#cce6ff] font-semibold text-[28px]">
+          <h2 className="text-[28px] font-semibold text-[#cce6ff]">
             {card.heading}
           </h2>
-          <p className="text-[16px] max-w-[260px] text-[#cce6ff]">
+          <p className="max-w-[260px] text-[16px] text-[#cce6ff]">
             {card.description}
           </p>
         </div>
@@ -79,4 +80,4 @@ function Cards() {
   );
 }
 
-export default Partner;
+export { Partner };

@@ -1,7 +1,7 @@
 function Trial() {
   return (
-    <section className="w-full pt-28 flex justify-center bg-[#151515]">
-      <div className="max-w-[1450px] lg:w-auto w-[90%] flex justify-center lg:items-center">
+    <section className="flex w-full justify-center bg-[#151515] pt-28">
+      <div className="flex w-[90%] max-w-[1450px] justify-center lg:w-auto lg:items-center">
         <MainContent />
       </div>
     </section>
@@ -12,12 +12,12 @@ function MainContent() {
   return (
     <div className="flex flex-col items-center">
       <img
-        className="w-24 h-24 bg-[#5c48b8] mb-2 rounded-2xl flex justify-center items-center"
+        className="mb-2 flex h-24 w-24 items-center justify-center rounded-2xl bg-[#5c48b8]"
         src="images/logo2.svg"
         alt=""
       />
-      <h2 className="text-[#cce6ff] font-bold text-[48px]">Free Trial</h2>
-      <p className="text-[16px] text-center max-w-[360px] mb-8 text-[#cce6ffBF]">
+      <h2 className="text-[48px] font-bold text-[#cce6ff]">Free Trial</h2>
+      <p className="mb-8 max-w-[360px] text-center text-[16px] text-[#cce6ffBF]">
         The program uses advanced data visualization techniques to transform
         textual.
       </p>
@@ -28,16 +28,16 @@ function MainContent() {
 
 function Button() {
   return (
-    <div className=" lg:h-[54px] lg:bg-[#202020] bg-transparent  text-white hover:border-blue-500 transition-all duration-500 rounded-full  lg:pl-4 lg:border border-white/10 flex lg:flex-row flex-col  gap-2 lg:gap-8 justify-between lg:items-center lg:w-[460px] w-full ">
+    <div className="flex w-full flex-col justify-between gap-2 rounded-full border-white/10 bg-transparent text-white transition-all duration-500 hover:border-blue-500 lg:h-[54px] lg:w-[460px] lg:flex-row lg:items-center lg:gap-8 lg:border lg:bg-[#202020] lg:pl-4">
       <input
-        className=" lg:bg-transparent bg-[#202020] rounded-full   py-4 lg:px-0 px-4 w-full outline-none "
+        className="w-full rounded-full bg-[#202020] px-4 py-4 outline-none lg:bg-transparent lg:px-0"
         placeholder="Email Address "
       ></input>
-      <button className="bg-[#cce6ff] lg:w-auto w-full  font-semibold flex justify-center items-center px-6 py-4 rounded-full h-full  text-black">
+      <button className="flex h-full w-full items-center justify-center rounded-full bg-[#cce6ff] px-6 py-4 font-semibold text-black lg:w-auto">
         Subscribe
       </button>
     </div>
   );
 }
 
-export default Trial;
+export { Trial };
