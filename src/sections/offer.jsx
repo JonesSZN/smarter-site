@@ -3,7 +3,7 @@ import { Container } from "../components";
 
 function Offer() {
   return (
-    <section className="flex w-full justify-center bg-[#151515] py-14 lg:py-28">
+    <section className="flex w-full bg-[#151515] py-14 lg:py-28">
       <Container className="flex-col gap-16">
         <Top />
         <Grid />

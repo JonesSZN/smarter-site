@@ -1,9 +1,11 @@
+import { Container } from "../components";
+
 function Trial() {
   return (
-    <section className="flex w-full justify-center bg-[#151515] pt-28">
-      <div className="flex w-[90%] max-w-[1450px] justify-center lg:w-auto lg:items-center">
+    <section className="flex w-full bg-[#151515] pt-28">
+      <Container className="justify-center">
         <MainContent />
-      </div>
+      </Container>
     </section>
   );
 }

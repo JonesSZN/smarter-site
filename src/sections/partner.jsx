@@ -3,7 +3,7 @@ import { Container } from "../components";
 
 function Partner() {
   return (
-    <section className="flex w-full justify-center bg-[#0D0D0D] py-28">
+    <section className="flex w-full bg-[#0D0D0D] py-28">
       <Container className="flex-col gap-16">
         <Toppartners />
         <Cards />

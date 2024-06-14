@@ -1,12 +1,13 @@
 import { ChevronRight } from "lucide-react";
+import { Container } from "../components";
 
 function Hero() {
   return (
-    <section className="flex w-full justify-center bg-[#151515] py-24 lg:py-28">
-      <div className="flex w-[95%] max-w-[1450px] flex-col items-center justify-center lg:w-[60%]">
+    <section className="flex w-full bg-[#151515] py-24 lg:py-28">
+      <Container className="w-[95%] flex-col items-center lg:w-[60%]">
         <HeroTop />
         <HeroImage />
-      </div>
+      </Container>
     </section>
   );
 }
