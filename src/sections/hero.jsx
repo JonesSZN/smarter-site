@@ -2,8 +2,8 @@ import { ChevronRight } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="w-full lg:py-28 py-24 bg-[#151515] flex justify-center">
-      <div className="lg:w-[60%] w-[95%] max-w-[1450px] flex flex-col justify-center items-center">
+    <section className="flex w-full justify-center bg-[#151515] py-24 lg:py-28">
+      <div className="flex w-[95%] max-w-[1450px] flex-col items-center justify-center lg:w-[60%]">
         <HeroTop />
         <HeroImage />
       </div>
@@ -13,21 +13,21 @@ function Hero() {
 
 function HeroTop() {
   return (
-    <div className="flex flex-col justify-center items-center gap-2 mb-4">
-      <div className="lg:flex lg:flex-row gap-2  flex flex-col items-center">
-        <p className="text-[#7a8794] text-[14px]">
+    <div className="mb-4 flex flex-col items-center justify-center gap-2">
+      <div className="flex flex-col items-center gap-2 lg:flex lg:flex-row">
+        <p className="text-[14px] text-[#7a8794]">
           READ MORE ABOUT WISEX ON APPLE.COM
         </p>
-        <button className="text-white flex items-center gap-1 bg-[#5240a6] py-[5px] px-[14px] rounded-full font-semibold">
+        <button className="flex items-center gap-1 rounded-full bg-[#5240a6] px-[14px] py-[5px] font-semibold text-white">
           More <ChevronRight color="white" size={18} />
         </button>
       </div>
 
-      <h1 className="text-center font-bold my-4 text-[#cce6ff] lg:text-7xl text-4xl text-[41px] lg:max-w-[880px] max-w-[350px]">
+      <h1 className="my-4 max-w-[350px] text-center text-4xl text-[41px] font-bold text-[#cce6ff] lg:max-w-[880px] lg:text-7xl">
         Make boring text and data beautiful with{" "}
         <span className="text-[#5c48b8]">Smarter</span>
       </h1>
-      <p className="lg:text-[16px] text-sm mb-4 text-center lg:max-w-[650px] max-w-[380px] text-[#cce6ffBF]">
+      <p className="mb-4 max-w-[380px] text-center text-sm text-[#cce6ffBF] lg:max-w-[650px] lg:text-[16px]">
         The program uses advanced data visualization techniques to transform
         textual information into graphical representations that are easy to
         understand and interpret.
@@ -39,11 +39,11 @@ function HeroTop() {
 
 function Buttons() {
   return (
-    <div className="lg:flex lg:flex-row flex flex-col lg:w-auto w-full gap-3 mb-12">
-      <button className="bg-[#151515] border border-[#cce6ff] text-[#cce6ff] font-semibold lg:flex  lg:py-[12px] py-[8px] px-10 rounded-full  text-[16px]">
+    <div className="mb-12 flex w-full flex-col gap-3 lg:flex lg:w-auto lg:flex-row">
+      <button className="rounded-full border border-[#cce6ff] bg-[#151515] px-10 py-[8px] text-[16px] font-semibold text-[#cce6ff] lg:flex lg:py-[12px]">
         Read More
       </button>
-      <button className="bg-[#cce6ff] font-semibold lg:flex lg:py-[12px] py-[8px] px-10 rounded-full text-[#202020] text-[16px]">
+      <button className="rounded-full bg-[#cce6ff] px-10 py-[8px] text-[16px] font-semibold text-[#202020] lg:flex lg:py-[12px]">
         Try Now
       </button>
     </div>
@@ -52,10 +52,10 @@ function Buttons() {
 
 function HeroImage() {
   return (
-    <div className="border-[7px] lg:w-[954px] w-[392px]  border-[#2e2e2e] rounded-3xl overflow-hidden">
+    <div className="w-[392px] overflow-hidden rounded-3xl border-[7px] border-[#2e2e2e] lg:w-[954px]">
       <img className="" src="images/dashboard.webp" alt="" />
     </div>
   );
 }
 
-export default Hero;
+export { Hero };

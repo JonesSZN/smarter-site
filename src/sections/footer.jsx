@@ -1,21 +1,8 @@
-function Footer() {
-  return (
-    <section className="w-full pt-24 flex justify-center bg-[#151515]">
-      <div className="lg:w-[65%] w-[90%] max-w-[1450px]">
-        <footer className="flex flex-col ">
-          <FooterContent />
-
-          <FooterBottom />
-          <div></div>
-        </footer>
-      </div>
-    </section>
-  );
-}
+import { Container } from "../components";
 
 function FooterContent() {
   return (
-    <div className="flex lg:flex-row flex-col justify-between mb-12">
+    <div className="mb-12 flex flex-col justify-between lg:flex-row">
       <FooterLeft />
       <FooterRight />
     </div>
@@ -26,7 +13,7 @@ function FooterLeft() {
   return (
     <div>
       <img src="images/brand-image.svg" alt="" />
-      <p className="text-[#cce6ffBF] text-[16px] mt-4 max-w-[300px]">
+      <p className="mt-4 max-w-[300px] text-[16px] text-[#cce6ffBF]">
         The program uses advanced data visulization techniques.
       </p>
     </div>
@@ -35,7 +22,7 @@ function FooterLeft() {
 
 function FooterRight() {
   return (
-    <div className="flex lg:flex-row lg:mt-0 mt-12 flex-col gap-16">
+    <div className="mt-12 flex flex-col gap-16 lg:mt-0 lg:flex-row">
       <FooterRightRow1 />
       <FooterRightRow2 />
       <FooterRightRow3 />
@@ -53,7 +40,7 @@ function FooterRightRow1() {
   ];
 
   return (
-    <ul className="flex flex-col gap-2 cursor-pointer">
+    <ul className="flex cursor-pointer flex-col gap-2">
       {FOOTER_ROW1.map((item, index) => (
         <li
           style={{
@@ -62,7 +49,7 @@ function FooterRightRow1() {
             fontSize: index === 0 ? "19px" : "",
             fontWeight: index === 0 ? "bold" : "",
           }}
-          className="text-[#7c8995] hover:text-[#cce6ff] duration-500 transition-all  text-[15px]"
+          className="text-[15px] text-[#7c8995] transition-all duration-500 hover:text-[#cce6ff]"
         >
           {item}
         </li>
@@ -80,7 +67,7 @@ function FooterRightRow2() {
   ];
 
   return (
-    <ul className="flex flex-col gap-2 cursor-pointer">
+    <ul className="flex cursor-pointer flex-col gap-2">
       {FOOTER_ROW1.map((item, index) => (
         <li
           style={{
@@ -89,7 +76,7 @@ function FooterRightRow2() {
             fontSize: index === 0 ? "19px" : "",
             fontWeight: index === 0 ? "bold" : "",
           }}
-          className="text-[#7c8995] hover:text-[#cce6ff] duration-500 transition-all text-[15px]"
+          className="text-[15px] text-[#7c8995] transition-all duration-500 hover:text-[#cce6ff]"
         >
           {item}
         </li>
@@ -107,7 +94,7 @@ function FooterRightRow3() {
   ];
 
   return (
-    <ul className="flex flex-col gap-2 cursor-pointer">
+    <ul className="flex cursor-pointer flex-col gap-2">
       {FOOTER_ROW1.map((item, index) => (
         <li
           style={{
@@ -116,7 +103,7 @@ function FooterRightRow3() {
             fontSize: index === 0 ? "19px" : "",
             fontWeight: index === 0 ? "bold" : "",
           }}
-          className="text-[#7c8995] hover:text-[#cce6ff] duration-500 transition-all text-[15px]"
+          className="text-[15px] text-[#7c8995] transition-all duration-500 hover:text-[#cce6ff]"
         >
           {item}
         </li>
@@ -127,20 +114,31 @@ function FooterRightRow3() {
 
 function FooterBottom() {
   return (
-    <div className="flex lg:flex-row flex-col gap-4 justify-between border-t border-white/10 py-8 ">
-      <p className="text-[#cce6ff] font-semibold text-[15px]">
+    <div className="flex flex-col justify-between gap-4 border-t border-white/10 py-8 lg:flex-row">
+      <p className="text-[15px] font-semibold text-[#cce6ff]">
         CREATED BY{" "}
-        <span className="underline cursor-pointer hover:text-red-400 transition-all duration-300">
+        <span className="cursor-pointer underline transition-all duration-300 hover:text-red-400">
           OVERSIGHT
         </span>
       </p>
-      <p className="text-[#cce6ff] font-semibold text-[15px] ">
+      <p className="text-[15px] font-semibold text-[#cce6ff]">
         POWERED BY{" "}
-        <span className="underline cursor-pointer hover:text-red-400 transition-all duration-300">
+        <span className="cursor-pointer underline transition-all duration-300 hover:text-red-400">
           WEBFLOW
         </span>
       </p>
     </div>
   );
 }
-export default Footer;
+
+function Footer() {
+  return (
+    <footer className="flex w-full justify-center bg-[#151515] pt-24">
+      <Container className="flex-col">
+        <FooterContent />
+        <FooterBottom />
+      </Container>
+    </footer>
+  );
+}
+export { Footer };

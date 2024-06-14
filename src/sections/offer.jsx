@@ -1,21 +1,22 @@
 import { Clock, Rocket, Mail, Phone, Folder } from "lucide-react";
+import { Container } from "../components";
 
 function Offer() {
   return (
-    <section className="w-full lg:py-28 py-14 flex justify-center bg-[#151515]">
-      <div className="lg:w-[65%] w-[90%] flex flex-col gap-16 max-w-[1450px]">
+    <section className="flex w-full justify-center bg-[#151515] py-14 lg:py-28">
+      <Container className="flex-col gap-16">
         <Top />
         <Grid />
-      </div>
+      </Container>
     </section>
   );
 }
 
 function Top() {
   return (
-    <div className="lg:flex lg:flex-row lg:justify-between lg:items-center flex flex-col">
-      <p className="text-[#cce6ff] lg:text-[48px] text-[28px]">What we offer</p>
-      <p className="text-[#cce6ffBF] lg:text-[16px] text-[14px] max-w-[400px]">
+    <div className="flex flex-col lg:flex lg:flex-row lg:items-center lg:justify-between">
+      <p className="text-[28px] text-[#cce6ff] lg:text-[48px]">What we offer</p>
+      <p className="max-w-[400px] text-[14px] text-[#cce6ffBF] lg:text-[16px]">
         We offer a range of features and services designed to make your digital
         life easier and more convenient
       </p>
@@ -24,14 +25,14 @@ function Top() {
 }
 function GridElement({ image, heading, description }) {
   return (
-    <div className="bg-[#202020] py-[30px] flex flex-col gap-4 rounded-2xl px-[20px] border border-white/10 hover:bg-[#0D0D0D] transition-all duration-200 hover:-translate-y-2 ">
-      <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+    <div className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-[#202020] px-[20px] py-[30px] transition-all duration-200 hover:-translate-y-2 hover:bg-[#0D0D0D]">
+      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-black">
         {image}
       </div>
-      <h2 className="text-[#cce6ff] lg:text-[28px] text-[24px] font-semibold">
+      <h2 className="text-[24px] font-semibold text-[#cce6ff] lg:text-[28px]">
         {heading}
       </h2>
-      <p className="text-[#cce6ffBF] lg:text-[16px] text-[14px]">
+      <p className="text-[14px] text-[#cce6ffBF] lg:text-[16px]">
         {description}
       </p>
     </div>
@@ -72,24 +73,24 @@ function Grid() {
     },
   ];
   return (
-    <div className="lg:grid lg:grid-cols-3 grid grid-cols-1 gap-8">
+    <div className="grid grid-cols-1 gap-8 lg:grid lg:grid-cols-3">
       {OFFER_CARDS.map((item, index) => {
         if (index === 0) {
           return (
-            <div className="bg-[#202020] py-[30px] lg:col-span-2 grid-cols-subgrid flex lg:flex-row flex-col items-center justify-between  gap-4 rounded-2xl px-[20px] border border-white/10 hover:bg-[#0D0D0D] transition-all duration-200 hover:-translate-y-2 ">
+            <div className="flex grid-cols-subgrid flex-col items-center justify-between gap-4 rounded-2xl border border-white/10 bg-[#202020] px-[20px] py-[30px] transition-all duration-200 hover:-translate-y-2 hover:bg-[#0D0D0D] lg:col-span-2 lg:flex-row">
               <div className="flex flex-col gap-4">
-                <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-black">
                   {item.img}
                 </div>
-                <h2 className="text-[#cce6ff] lg:text-[28px] text-[24px] font-semibold">
+                <h2 className="text-[24px] font-semibold text-[#cce6ff] lg:text-[28px]">
                   {item.heading}
                 </h2>
-                <p className="text-[#cce6ffBF] lg:max-w-[270px] lg:text-[16px] text-[14px]">
+                <p className="text-[14px] text-[#cce6ffBF] lg:max-w-[270px] lg:text-[16px]">
                   {item.description}
                 </p>
               </div>
               <img
-                className="lg:w-auto lg:h-[240px] w-3/4 h-auto shrink-0"
+                className="h-auto w-3/4 shrink-0 lg:h-[240px] lg:w-auto"
                 src="images/credit-card.png"
                 alt=""
               />
@@ -109,4 +110,4 @@ function Grid() {
   );
 }
 
-export default Offer;
+export { Offer };
