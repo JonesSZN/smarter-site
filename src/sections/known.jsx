@@ -3,7 +3,7 @@ import { Container } from "../components";
 
 function Known() {
   return (
-    <section className="flex w-full justify-center bg-[#151515] py-16">
+    <section className="flex w-full bg-[#151515] py-16">
       <Container className="flex-col">
         <Top />
         <Bottom />

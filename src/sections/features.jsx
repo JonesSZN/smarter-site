@@ -2,7 +2,7 @@ import { Container } from "../components";
 
 function Features() {
   return (
-    <section className="flex w-full justify-center bg-[#151515] py-28">
+    <section className="flex w-full bg-[#151515] py-28">
       <Container className="flex-col gap-8">
         <Top />
         <Bottom />

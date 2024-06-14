@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="flex flex-col items-center">
+      <main>
         <Hero />
         <Partner />
         <Offer />
