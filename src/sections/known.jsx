@@ -50,7 +50,7 @@ function MidCol() {
 
 function MidColRight() {
   return (
-    <div className="mt-4 flex w-[50%] flex-col gap-4">
+    <div className="mt-4 flex flex-col gap-4 lg:w-[50%]">
       <h1 className="text-[24px] font-bold text-[#cce6ff] lg:text-4xl">
         Automated Transaction Categorization
       </h1>
