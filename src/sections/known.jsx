@@ -37,8 +37,12 @@ function TopHeading() {
 
 function MidCol() {
   return (
-    <div className="flex flex-col gap-32 py-20 lg:flex-row">
-      <img className="w-[636px]" src="images/data-graph.png" alt="" />
+    <div className="flex flex-col gap-32 py-20 lg:flex-row lg:gap-24 xl:gap-32">
+      <img
+        className="!aspect-[1.5] w-[50%]"
+        src="images/data-graph.png"
+        alt=""
+      />
       <MidColRight />
     </div>
   );
@@ -46,7 +50,7 @@ function MidCol() {
 
 function MidColRight() {
   return (
-    <div className="mt-4 flex flex-col gap-4">
+    <div className="mt-4 flex w-[50%] flex-col gap-4">
       <h1 className="text-[24px] font-bold text-[#cce6ff] lg:text-4xl">
         Automated Transaction Categorization
       </h1>
